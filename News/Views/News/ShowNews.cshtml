@@ -1,0 +1,9 @@
+﻿@using News.Models;
+@model IEnumerable<NewsVM>
+
+@foreach (var news in Model)
+{
+	<h1>@news.Title</h1>
+	<p>@news.Article</p>
+	<a href="#" class="readmore">Read more</a>
+}
