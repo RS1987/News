@@ -53,7 +53,7 @@ namespace News.Domain.Common
 			}
 		}
 
-		public bool EditItem(T item)
+		public bool ChangeItem(T item)
 		{
 			try
 			{

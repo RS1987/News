@@ -6,8 +6,7 @@ namespace News.AppContext
 	{
 		public DbSet<Entities.News> News { get; set; }
 
-		public AppDbContext(string connStrName)
-			: base(connStrName)
+		public AppDbContext()
 		{
 			Database.SetInitializer<AppDbContext>( new AppDbInitializer());
 		}

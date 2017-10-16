@@ -1,0 +1,21 @@
+﻿@model IEnumerable<News.Models.NewsVM>
+ 
+@{
+	ViewBag.Title = "News Feed";
+}
+ 
+<h2>Add News</h2>
+ 
+@using(Html.BeginForm("Create","AddNews",FormMethod.Post))
+{
+	<fieldset>
+		<legend>Add Title</legend>
+		Enter News Title: <br /> <input type="text" name="Title" id="Title" maxlength="50" />
+		<br />
+		Enter News Text: <br /> 
+		<textarea name="Article" id="Article" rows="5" cols="40">
+        </textarea> 
+		<br />
+		<input type="submit" value="Add" />
+	</fieldset>
+}
